@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+using namespace std ;
+int main(){
+int id1,id2,id3;
+string title1,title2,title3;
+//---------------------------------------
+cout<<"Enter BOOK_ID 1:";
+cin>>id1;
+
+cin.ignore();
+cout<<"Enter BOOK_Title 1:";
+getline(cin,title1);
+//---------------------------------------
+cout<<"Enter BOOK_ID 2:";
+cin>>id2;
+
+cin.ignore();
+cout<<"Enter BOOK_Title 2:";
+getline(cin,title2);
+//---------------------------------------
+cout<<"Enter BOOK_ID 3:";
+cin>>id3;
+
+cin.ignore();
+cout<<"Enter BOOK_Title 3";
+getline(cin,title3);
+//---------------------------------------
+cout<<"\n LIBRARY BOOKS ";
+cout<<"\nBook ID1 :"<<id1;
+cout<<"\nBook Title :"<<title1;
+cout<<"\nBook ID2 :"<<id2;
+cout<<"\nBook Title :"<<title2;
+cout<<"\nBook id 3 :"<<id3;
+cout<<"\nbook title :"<<title3;
+cout<<"\n";
+
+return 0;
+}
