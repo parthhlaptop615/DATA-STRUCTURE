@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std ;
+
+int main()
+{
+        int book[5];
+        int searchID;
+
+        cout<<"ENTER 5 BOOKS IDs :/n";
+
+        for (int i=0; i<5; i++)
+{
+                cin>>book[i];
+}
+        cout<<"\nENTER BOOK ID TO SEARCH\n";
+        cin>>searchID;
+
+        for (int i=0 ; i<5; i++)
+{
+                if (book[i]==searchID)
+{
+                cout<<"book found!\n";
+                return 0;
+}
+}
+        cout<<"BOOK NOT FOUNDED !\n";
+        return 0;
+}
