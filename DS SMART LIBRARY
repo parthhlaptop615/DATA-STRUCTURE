@@ -1,0 +1,68 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int book[10];
+int n=0;
+int choice;
+int searchID;
+
+do 
+{
+cout<<"\n\n==========SMART LIBRARY =============";
+cout<<"\n 1. Add Book";
+cout<<"\n 2. Display Book";
+cout<<"\n 3. Search Book";
+cout<<"\n 4. Exit";
+cout<<"\n ENTER YOUR CHOICE :- ";
+cin>>choice;
+
+if (choice==1)
+{
+cout<<"ENTER BOOK ID :-";
+cin>>book[n];
+n++;
+cout<<"Book Added";
+}
+else if (choice==2)
+{
+cout<<"\n Book In Library :\n";
+for (int i=0; i<n; i++)
+
+{
+cout<<book[i]<<endl;
+}
+}
+else if (choice == 3)
+{
+cout<<"ENTER BOOK ID TO SEARCH :-";
+cin>> searchID;
+bool found = false ;
+for (int i=0; i<n;i++)
+{
+if (book[i] == searchID)
+{
+found = true ;
+}
+}
+if (found)
+{
+cout<<"BOOK FOUNDED !!!";
+}
+else 
+{
+cout<<"BOOK NOT FOUNDED !!!";
+}
+}
+else if (choice==4)
+{
+cout<<"THANK YOU !!!";
+}
+else 
+{
+cout<<"INVALID CHOICE !!!";
+}
+}
+while (choice !=4);
+return 0;
+}
