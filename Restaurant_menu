@@ -3,53 +3,49 @@ using namespace std;
 
 void menu()
 {
+int choice;
 
-        int choice;
+cout<<"--------------RESTAURENT MENU ---------------"<<endl;
+cout<<"1.PIZZA "<<endl;
+cout<<"2.BURGER"<<endl;
+cout<<"3.PASTA"<<endl;
+cout<<"4.EXIT"<<endl;
+cout<<"5.THANKYOU"<<endl;
+cout<<"6.INVALID CHOICE"<<endl;
 
-        cout<<"===== RESTAURANT MENU ====="<<endl;
-        cout<<"1.Pizza"<<endl;
-        cout<<"2.Burger"<<endl;
-        cout<<"3.Pasta"<<endl;
-        cout<<"4.Exit"<<endl;
+cout<<"ENTER YOUR CHOICE :"<<endl;
+cin>>choice;
 
-        cout<<"Enter your choice: "<<endl;
-        cin>>choice;
+if (choice==1)
+{
+cout<<"YOU SELECTED PIZZA";
+menu();
+}
+else if (choice ==2)
+{
+cout<<"YOU SELECTED BURGER";
+menu();
+}
+else if (choice==3)
+{
+cout<<"YOU SELECTED PASTA";
+menu();
+}
+else if (choice==4)
+{
 
-if (choice == 1)
- {
-        cout<<"You selected Pizza.";
-        menu();
- }
-else if (choice == 2)
- {
-        cout<<"You Selected Burger.";
-        menu();
- }
-else if (choice == 3)
- {
-        cout<<"You Selected Pasta.";
-        menu();
- }
-else if (choice == 4)
- {
-       cout<<"Exit.";
-        menu();
- }
-else if  (choice == 5)
- {
-        cout<<"THANK YOU.";
-        menu();
- }
-else if(choice == 6)
- {
-        cout<<"Invalid Choice.";
-        menu();
- }
+cout<<"EXIT";
+}
+else
+{
+cout<<"INVALID CHOICE";
+menu();
+}
 };
 
-int main()
+int main ()
 {
 menu();
-
-return 0;
+return 0 ;
 }
+
